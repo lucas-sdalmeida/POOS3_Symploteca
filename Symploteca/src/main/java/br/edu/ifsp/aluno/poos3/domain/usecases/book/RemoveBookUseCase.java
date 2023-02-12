@@ -9,7 +9,7 @@ public class RemoveBookUseCase {
         this.bookDAO = bookDAO;
     }
 
-    public boolean delete(Integer key) {
+    public boolean remove(Integer key) {
         if (key == null)
             throw new IllegalArgumentException("Key cannot be null");
 

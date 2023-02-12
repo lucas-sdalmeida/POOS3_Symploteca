@@ -12,7 +12,7 @@ public class CreateBookUseCase {
         this.bookDAO = bookDAO;
     }
 
-    public Integer insert(Book book) {
+    public Integer create(Book book) {
         Validator<Book> validator = new BookRequestValidator();
         Notification notification = validator.validate(book);
 

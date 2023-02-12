@@ -13,7 +13,7 @@ public class UpdateBookUseCase {
 
     public boolean update(Book book, Integer key) {
         if (key == null)
-            throw new IllegalArgumentException("Key cannot be no 'null'!");
+            throw new IllegalArgumentException("Key cannot be 'null'!");
 
         BookRequestValidator validator = new BookRequestValidator();
         Notification notification = validator.validate(book);

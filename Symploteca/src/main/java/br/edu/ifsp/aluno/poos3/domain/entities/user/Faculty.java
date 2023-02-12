@@ -27,6 +27,14 @@ public class Faculty extends User {
         return 30;
     }
 
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
     @Override
     public String toString() {
         return "Faculty{" +
