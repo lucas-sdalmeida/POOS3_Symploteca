@@ -55,6 +55,14 @@ public class Transaction {
         this.returnDate = returnDate;
     }
 
+    public Book getBook() {
+        return book;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
     @Override
     public String toString() {
         return "Transaction{" +
